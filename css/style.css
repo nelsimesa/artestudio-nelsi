@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+ 
+/* configuracion inicial*/
+
+/* crear constantes de diseño */
+
+:root{
+    /* colores */
+    --colorEncabezado:#fafcfd;
+    --colorPie:#bbddef;
+    --coloEnlace:#fefafa;
+    --colorEnlaceSobre:#9bd0e6;
+
+    /* fuente */
+    --textos:'roboto', sans-serif;
+    --tamTitulos:5.3rem;
+}
+
+/* el simbolo (*),es el selector universal en css */
+*{
+    box-sizing: border-box;
+}
+
+/* para escribir una clase, que esta en el html, se escribe con un punto .home-wrapper */
+
+
+.home-wrapper{
+   /* imagen de fondo */
+   background-image: url('../imagenes/fondo2.jfif');  
+   background-size: cover;
+}
+
+/* selector de encabezado header */
+header{
+    width: 100%;
+    background-color: var(--colorEncabezado);
+    position: fixed;
+    /* espaciado */
+    padding: 10px 0;
+}
+
+
+/* cambiar de tamaño al logo */
+header img{
+    width: 200px;
+
+}
+
+/* organizar el menu */
+
+header nav{
+    float: right;
+   margin-top: 10px;
+
+}
+
+header nav a{
+    color: var(--colorEnlace);
+    text-decoration: none;
+    /* background-color:var (--colorEnlacesobre); */
+    margin-left: 5px;
+    
+}
+
+/* crear los estilos de la seccion home */
+/* los id en css se escriben con el simbolo de # */
+#home{
+    /* textos centrado */
+    text-align: center;
+    /* espaciado superior e inferior */
+    padding: 250px 0 250px;
+}
+
+/* las class se representan por un . */
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* utilizar el selector de la etiqueta section */
+section{
+    /* espaciado superior */
+    padding-top: 80px;
+}
+
+/* en la seccion de home, aplicar estilos al titulo novedades */
+
+#home h2{
+    /* fuente */
+    font-family: var(--textos);
+    /* color de fuente */
+    color: #fff;
+    /* tamaño de fuente */
+    font-size: var(--tamTitulos);
+    /* negrita al titulo */
+    font-weight: bold;
+ 
+}
+
+/* aplicar estilos al textoen la seccion home  */
+#home p{
+    font-family: var(--textos);
+    font-size: 1.8rem;
+    color: #fff;
+
+}
